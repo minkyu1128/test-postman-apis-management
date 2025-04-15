@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "a3704dd9-92f9-4cf1-92d3-c49090e921e0",
+		"name": "컬렉션-A",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "14114573-a3704dd9-92f9-4cf1-92d3-c49090e921e0"
+	},
+	"item": [
+		{
+			"name": "회원 등록",
+			"id": "53f8bbf0-9b39-4e27-8a16-70e808a0bfe9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{a-host}}/api/members",
+					"host": [
+						"{{a-host}}"
+					],
+					"path": [
+						"api",
+						"members"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "회원 조회",
+			"id": "e610059a-1dca-402e-b786-481a92910148",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{a-host}}/api/members",
+					"host": [
+						"{{a-host}}"
+					],
+					"path": [
+						"api",
+						"members"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "회원 수정",
+			"id": "8fb05bfd-e4cc-408d-a470-d9edc7817281",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{a-host}}/api/members?id=1",
+					"host": [
+						"{{a-host}}"
+					],
+					"path": [
+						"api",
+						"members"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "회원 삭제",
+			"id": "f3ce65c0-781d-4ca2-aff4-b1d125ebcdb5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{a-host}}/api/members?id=1",
+					"host": [
+						"{{a-host}}"
+					],
+					"path": [
+						"api",
+						"members"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "068d04f8-c3e1-4d97-9279-3a17363f147b",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "88a2983f-1cf7-4f29-ab87-c63447b8cdd1",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "4a351410-948c-4e36-96ab-80a9065b63b2",
+			"key": "a-host",
+			"value": "http://localhost:18080",
+			"type": "string"
+		}
+	]
+}
